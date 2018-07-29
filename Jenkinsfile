@@ -9,7 +9,7 @@ steps {
 */
 sh '''  
 pwd
-cd $HOME/make
+cd $HOME
 pwd
 sh 'make'
 junit '**/target/*.xml'
