@@ -11,7 +11,7 @@ sh '''
 pwd
 cd $HOME
 pwd
-sh 'make'
+make
 junit '**/target/*.xml'
 '''
 }
