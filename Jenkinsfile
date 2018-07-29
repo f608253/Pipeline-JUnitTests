@@ -7,8 +7,11 @@ steps {
 /* `make check` returns non-zero on test failures,
 * using `true` to allow the Pipeline to continue nonetheless
 */
+sh '''  
+pwd
 sh make
 junit '**/target/*.xml'
+'''
 }
 }
 }
