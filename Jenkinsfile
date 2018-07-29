@@ -9,6 +9,8 @@ steps {
 */
 sh '''  
 pwd
+cd $HOME
+pwd
 sh make
 junit '**/target/*.xml'
 '''
